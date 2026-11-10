@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #1e1b2e;
+    color: #f2f2f2;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #2d2748;
+}
+
+header h1 {
+    margin: 0;
+    color: #e0b04a;
+}
+
+.subtitulo {
+    font-style: italic;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #e0b04a;
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section h2 {
+    color: #e0b04a;
+    text-align: center;
+}
+
+#banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.grid-livros {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+.card-livro {
+    background-color: #2d2748;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-livro img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+}
+
+button {
+    background-color: #e0b04a;
+    color: #1e1b2e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b8862b;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2748;
+}
+
+footer a {
+    color: #e0b04a;
+}
+
+/* celular */
+@media (max-width: 600px) {
+    .grid-livros {
+        grid-template-columns: 1fr;
+    }
+}
